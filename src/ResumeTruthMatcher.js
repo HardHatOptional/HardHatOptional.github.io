@@ -9,6 +9,9 @@ const ResumeTruthMatcher = () => {
   const [fitScore, setFitScore] = useState(0);
   const [apiStatus, setApiStatus] = useState('checking');
   const [isApiConnected, setIsApiConnected] = useState(false);
+  const [uploadedFile, setUploadedFile] = useState('');
+
+
 
   // Check API connection on component mount
   useEffect(() => {
